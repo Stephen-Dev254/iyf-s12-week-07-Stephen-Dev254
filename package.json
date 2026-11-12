@@ -1,0 +1,11 @@
+{
+  "name": "Stephen-Dev254",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  }
+}
