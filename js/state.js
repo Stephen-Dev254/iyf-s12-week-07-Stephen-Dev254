@@ -9,13 +9,14 @@ import {
 
 const TODOS_KEY = "todos";
 const FILTER_KEY = "filter";
+const VALID_FILTERS = ["all", "active", "completed"];
 
 const savedTodos = getFromStorage(TODOS_KEY, []);
 const savedFilter = getFromStorage(FILTER_KEY, "all");
 
 const state = {
     todos: Array.isArray(savedTodos) ? savedTodos : [],
-    currentFilter: ["all", "active", "completed"].includes(savedFilter) ? savedFilter : "all",
+    currentFilter: VALID_FILTERS.includes(savedFilter) ? savedFilter : "all",
 };
 
 let onChangeCallback = null;
@@ -28,12 +29,15 @@ function commit() {
     saveToStorage(TODOS_KEY, state.todos);
     saveToStorage(FILTER_KEY, state.currentFilter);
     if (onChangeCallback) {
-        onChangeCallback(state);
+        onChangeCallback(getState());
     }
 }
 
 export function getState() {
-    return state;
+    return {
+        todos: state.todos.map((todo) => ({ ...todo })),
+        currentFilter: state.currentFilter,
+    };
 }
 
 export function addTodo(text) {
@@ -62,6 +66,9 @@ export function clearCompleted() {
 }
 
 export function setFilter(filterType) {
+    if (!VALID_FILTERS.includes(filterType)) {
+        return;
+    }
     state.currentFilter = filterType;
     commit();
 }
