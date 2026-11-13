@@ -82,7 +82,8 @@ iyf-s12-week-07-Stephen-Dev254/
 - **Team / partner:** @HellenWamuciiNjue
 - **PR I opened:** https://github.com/Stephen-Dev254/iyf-s12-week-07-Stephen-Dev254/pull/1
 - **PR I reviewed:** https://github.com/HellenWamuciiNjue/iyf-s12-week-07-HellenWamuciiNjue/pull/1
-- **Review I wrote:**https://github.com/HellenWamuciiNjue/iyf-s12-week-07-HellenWamuciiNjue/pull/1#pullrequestreview-5896297391
+- **Review I wrote:**
+- https://github.com/HellenWamuciiNjue/iyf-s12-week-07-HellenWamuciiNjue/pull/1#pullrequestreview-5897627815
 
 ## Live Demo (if deployed)
 [View Live Demo]   https://stephen-dev254.github.io/iyf-s12-week-07-Stephen-Dev254/
