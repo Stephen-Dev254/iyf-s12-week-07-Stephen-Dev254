@@ -83,7 +83,7 @@ iyf-s12-week-07-Stephen-Dev254/
 
 ## Collaboration
 - **Team / partner:** @HellenWamuciiNjue
-- **PR I opened:** 
+- **PR I opened:** https://github.com/Stephen-Dev254/iyf-s12-week-07-Stephen-Dev254/pull/1
 - **PR I reviewed:** https://github.com/HellenWamuciiNjue/iyf-s12-week-07-HellenWamuciiNjue/pull/1
 - **Review I wrote:**https://github.com/HellenWamuciiNjue/iyf-s12-week-07-HellenWamuciiNjue/pull/1#pullrequestreview-5896297391
 
