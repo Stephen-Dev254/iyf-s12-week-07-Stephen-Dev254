@@ -82,10 +82,10 @@ iyf-s12-week-07-Stephen-Dev254/
 - **Handling Corrupted or Empty Storage:** Initial reads from `localStorage` could return `null` or malformed JSON. Solved by wrapping `JSON.parse` inside a `try/catch` block in `js/storage.js` and validating array types before initializing application state.
 
 ## Collaboration
-- **Team / partner:** [@partner-username]
-- **PR I opened:** https://github.com/Stephen-Dev254/iyf-s12-week-07-Stephen-Dev254/pull/1
-- **PR I reviewed:** 
-- **Review I wrote:** 
+- **Team / partner:** @HellenWamuciiNjue
+- **PR I opened:** 
+- **PR I reviewed:** https://github.com/HellenWamuciiNjue/iyf-s12-week-07-HellenWamuciiNjue/pull/1
+- **Review I wrote:**https://github.com/HellenWamuciiNjue/iyf-s12-week-07-HellenWamuciiNjue/pull/1#pullrequestreview-5896297391
 
 ## Live Demo (if deployed)
 [View Live Demo]   https://stephen-dev254.github.io/iyf-s12-week-07-Stephen-Dev254/
