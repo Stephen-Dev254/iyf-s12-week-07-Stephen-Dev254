@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shopping Cart — Lesson 13 Build</title>
+        <style>
+            body {
+                font-family: system-ui, sans-serif;
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 1.5rem;
+                background: #f8fafc;
+                color: #1e293b;
+            }
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 2px solid #e2e8f0;
+                padding-bottom: 1rem;
+                margin-bottom: 2rem;
+            }
+            .badge {
+                background: #2563eb;
+                color: white;
+                padding: 0.35rem 0.75rem;
+                border-radius: 999px;
+                font-weight: 600;
+            }
+            .layout {
+                display: grid;
+                grid-template-columns: 1.3fr 1fr;
+                gap: 2rem;
+            }
+            @media (max-width: 700px) {
+                .layout {
+                    grid-template-columns: 1fr;
+                }
+            }
+            .product-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+                gap: 1rem;
+            }
+            .product-card,
+            .cart-panel {
+                background: white;
+                border: 1px solid #e2e8f0;
+                border-radius: 10px;
+                padding: 1rem;
+            }
+            .product-img {
+                font-size: 2.5rem;
+                text-align: center;
+                background: #f1f5f9;
+                border-radius: 8px;
+                padding: 1rem;
+                margin-bottom: 0.75rem;
+            }
+            button {
+                padding: 0.45rem 0.85rem;
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+                font-weight: 600;
+            }
+            .btn-primary {
+                background: #2563eb;
+                color: white;
+                width: 100%;
+            }
+            .btn-primary:hover {
+                background: #1d4ed8;
+            }
+            .btn-secondary {
+                background: #e2e8f0;
+                color: #1e293b;
+            }
+            .btn-danger {
+                background: #fee2e2;
+                color: #dc2626;
+            }
+            .cart-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid #f1f5f9;
+                padding: 0.75rem 0;
+                gap: 0.5rem;
+            }
+            .qty-controls {
+                display: flex;
+                align-items: center;
+                gap: 0.4rem;
+            }
+            .cart-footer {
+                margin-top: 1.25rem;
+                border-top: 2px solid #e2e8f0;
+                padding-top: 1rem;
+            }
+            .cart-actions {
+                display: flex;
+                gap: 0.5rem;
+                margin-top: 0.75rem;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Duka Express</h1>
+            <div class="badge">Cart Items: <span id="cart-count">0</span></div>
+        </header>
+
+        <main class="layout">
+            <section>
+                <h2>Products</h2>
+                <div id="product-list" class="product-grid"></div>
+            </section>
+
+            <aside class="cart-panel">
+                <h2>Your Cart</h2>
+                <div id="cart-items"></div>
+                <div class="cart-footer">
+                    <strong>Total: KES <span id="cart-total">0</span></strong>
+                    <div class="cart-actions">
+                        <button type="button" id="undo-btn" class="btn-secondary">Undo</button>
+                        <button type="button" id="clear-cart-btn" class="btn-danger">
+                            Clear Cart
+                        </button>
+                    </div>
+                </div>
+            </aside>
+        </main>
+
+        <script type="module" src="cart.js"></script>
+    </body>
+</html>

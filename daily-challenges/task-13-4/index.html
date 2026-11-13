@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Task 13.4 — State Management Patterns</title>
+        <style>
+            body {
+                font-family: system-ui, sans-serif;
+                max-width: 600px;
+                margin: 2rem auto;
+                padding: 0 1rem;
+                line-height: 1.5;
+            }
+            body.dark {
+                background: #0f172a;
+                color: #f8fafc;
+            }
+            .card {
+                border: 1px solid #cbd5e1;
+                border-radius: 8px;
+                padding: 1.25rem;
+                margin-bottom: 1.5rem;
+            }
+            button {
+                padding: 0.5rem 1rem;
+                font-size: 1rem;
+                margin-right: 0.5rem;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Task 13.4: State Management Patterns</h1>
+
+        <section class="card">
+            <h2>Exercise 1: Centralized State (Theme Persistence)</h2>
+            <p>Current Theme: <strong id="theme-label">light</strong></p>
+            <button type="button" id="toggle-theme-btn">Toggle Theme</button>
+        </section>
+
+        <section class="card">
+            <h2>Exercise 2: Observer Pattern (Store Counter)</h2>
+            <p>Store Count: <strong id="count-display">0</strong></p>
+            <button type="button" id="increment-btn">+1</button>
+            <button type="button" id="decrement-btn">-1</button>
+            <button type="button" id="unsubscribe-btn">Unsubscribe UI</button>
+        </section>
+
+        <script type="module" src="state-patterns.js"></script>
+    </body>
+</html>

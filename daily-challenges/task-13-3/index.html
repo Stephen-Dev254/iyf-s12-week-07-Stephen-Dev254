@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Task 13.3 — Session Storage Form</title>
+        <style>
+            body {
+                font-family: system-ui, sans-serif;
+                max-width: 520px;
+                margin: 2rem auto;
+                padding: 0 1rem;
+                line-height: 1.5;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 0.75rem;
+                margin-top: 1rem;
+            }
+            input,
+            textarea,
+            button {
+                padding: 0.65rem;
+                font-size: 1rem;
+                border: 1px solid #cbd5e1;
+                border-radius: 6px;
+            }
+            button {
+                background: #2563eb;
+                color: white;
+                border: none;
+                cursor: pointer;
+                font-weight: 600;
+            }
+            button:hover {
+                background: #1d4ed8;
+            }
+            .status {
+                margin-top: 1rem;
+                color: #16a34a;
+                font-weight: 500;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Contact Form (sessionStorage Backup)</h1>
+        <p>
+            Start typing below. If you refresh this tab, your draft is restored. When you submit or
+            close the tab, <code>sessionStorage</code> clears it.
+        </p>
+
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea
+                name="message"
+                rows="4"
+                placeholder="Write your message..."
+                required
+            ></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <p id="status-msg" class="status"></p>
+
+        <script type="module" src="session-form.js"></script>
+    </body>
+</html>

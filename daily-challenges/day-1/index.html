@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Day 1 — Theme Persistence</title>
+        <style>
+            :root {
+                --bg: #ffffff;
+                --text: #1e293b;
+                --card: #f1f5f9;
+            }
+            body.dark-mode {
+                --bg: #0f172a;
+                --text: #f8fafc;
+                --card: #1e293b;
+            }
+            body {
+                font-family: system-ui, sans-serif;
+                background: var(--bg);
+                color: var(--text);
+                max-width: 520px;
+                margin: 2rem auto;
+                padding: 1.5rem;
+                transition:
+                    background 0.2s,
+                    color 0.2s;
+            }
+            .card {
+                background: var(--card);
+                padding: 1.25rem;
+                border-radius: 8px;
+                margin-top: 1rem;
+            }
+            button {
+                padding: 0.6rem 1.2rem;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Day 1: Theme Persistence</h1>
+        <button type="button" id="theme-toggle">Switch to Dark Mode</button>
+        <div class="card">
+            <p>Active Theme: <strong id="current-theme">light</strong></p>
+            <p>Refresh the page—your theme choice stays applied immediately on load.</p>
+        </div>
+        <script type="module" src="theme.js"></script>
+    </body>
+</html>
