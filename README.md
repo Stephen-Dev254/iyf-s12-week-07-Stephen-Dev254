@@ -1,6 +1,3 @@
-# iyf-s12-week-07-Stephen-Dev254
-
-JavaScript Best Practices
 # Week 7: JavaScript Best Practices — Persistent Modular To-Do List
 
 ## Author
