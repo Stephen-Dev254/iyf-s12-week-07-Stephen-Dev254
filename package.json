@@ -1,11 +1,20 @@
 {
-  "name": "Stephen-Dev254",
-  "version": "1.0.0",
-  "type": "module",
-  "scripts": {
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "lint": "eslint .",
-    "format": "prettier --write ."
-  }
+    "name": "stephen-dev254",
+    "version": "1.0.0",
+    "description": "Week 7: JavaScript Best Practices - Persistent Modular To-Do List",
+    "main": "js/app.js",
+    "type": "module",
+    "scripts": {
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "format": "prettier --write \"**/*.{js,html,css}\"",
+        "test": "vitest run"
+    },
+    "devDependencies": {
+        "@eslint/js": "^10.0.1",
+        "eslint": "^10.0.0",
+        "globals": "^17.4.0",
+        "prettier": "^3.8.1",
+        "vitest": "^4.0.18"
+    }
 }

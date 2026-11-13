@@ -1,159 +1,159 @@
 /* Core Styling Variables and General Aesthetics */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f6f8;
-  color: #333;
-  display: flex;
-  justify-content: center;
-  padding-top: 50px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
 }
 
 .container {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  width: 100%;
-  max-width: 450px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 450px;
 }
 
 h1 {
-  text-align: center;
-  margin-bottom: 25px;
-  color: #2c3e50;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
 }
 
 form {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-input[type='text'] {
-  flex: 1;
-  padding: 10px 15px;
-  border: 2px solid #e2e8f0;
-  border-radius: 6px;
-  font-size: 16px;
-  outline: none;
-  transition: border-color 0.2s;
+input[type="text"] {
+    flex: 1;
+    padding: 10px 15px;
+    border: 2px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s;
 }
 
-input[type='text']:focus {
-  border-color: #3182ce;
+input[type="text"]:focus {
+    border-color: #3182ce;
 }
 
 button {
-  padding: 10px 20px;
-  background-color: #3182ce;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: background-color 0.2s;
+    padding: 10px 20px;
+    background-color: #3182ce;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s;
 }
 
 button:hover {
-  background-color: #2b6cb0;
+    background-color: #2b6cb0;
 }
 
 /* Filter Configurations */
 .filters {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 .filter {
-  background: none;
-  color: #718096;
-  border: 1px solid transparent;
-  padding: 5px 12px;
-  font-size: 14px;
+    background: none;
+    color: #718096;
+    border: 1px solid transparent;
+    padding: 5px 12px;
+    font-size: 14px;
 }
 
 .filter:hover {
-  background: #edf2f7;
-  color: #4a5568;
+    background: #edf2f7;
+    color: #4a5568;
 }
 
 .filter.active {
-  border-color: #3182ce;
-  color: #3182ce;
-  background: #ebf8ff;
+    border-color: #3182ce;
+    color: #3182ce;
+    background: #ebf8ff;
 }
 
 /* Dynamic Todo Row Structures */
 ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 20px 0;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
 }
 
 li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 15px;
-  border-bottom: 1px solid #edf2f7;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  word-break: break-all;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    border-bottom: 1px solid #edf2f7;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    word-break: break-all;
 }
 
 li:hover {
-  background-color: #f7fafc;
+    background-color: #f7fafc;
 }
 
 li:hover .delete-btn {
-  opacity: 1;
+    opacity: 1;
 }
 
 /* Mandatory Strikethrough Layout styling Rule */
 li.completed span {
-  text-decoration: line-through;
-  color: #a0aec0;
+    text-decoration: line-through;
+    color: #a0aec0;
 }
 
 .delete-btn {
-  background: none;
-  color: #e53e3e;
-  padding: 2px 8px;
-  font-size: 14px;
-  opacity: 0; /* Hidden by default, surfaces on hover */
-  transition: opacity 0.2s;
+    background: none;
+    color: #e53e3e;
+    padding: 2px 8px;
+    font-size: 14px;
+    opacity: 0; /* Hidden by default, surfaces on hover */
+    transition: opacity 0.2s;
 }
 
 .delete-btn:hover {
-  background-color: #fed7d7;
+    background-color: #fed7d7;
 }
 
 /* Stats Layout */
 .stats {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 14px;
-  color: #718096;
-  border-top: 2px solid #edf2f7;
-  padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #718096;
+    border-top: 2px solid #edf2f7;
+    padding-top: 15px;
 }
 
 #clear-completed {
-  background: none;
-  color: #e53e3e;
-  font-weight: normal;
-  padding: 5px 10px;
+    background: none;
+    color: #e53e3e;
+    font-weight: normal;
+    padding: 5px 10px;
 }
 
 #clear-completed:hover {
-  background-color: #fed7d7;
+    background-color: #fed7d7;
 }
 
 .todo-edit-input {
-  width: 70%;
-  padding: 6px 10px;
-  font-size: 16px;
+    width: 70%;
+    padding: 6px 10px;
+    font-size: 16px;
 }
