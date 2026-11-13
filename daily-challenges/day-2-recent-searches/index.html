@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 2 — Recent Searches</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        max-width: 450px;
+        margin: 2rem auto;
+      }
+      .search-box {
+        position: relative;
+        display: flex;
+        gap: 0.5rem;
+      }
+      input {
+        flex: 1;
+        padding: 0.5rem;
+        font-size: 1rem;
+      }
+      .dropdown {
+        border: 1px solid #cbd5e1;
+        list-style: none;
+        padding: 0;
+        margin: 0.25rem 0 0;
+        display: none;
+      }
+      .dropdown.open {
+        display: block;
+      }
+      .dropdown li {
+        padding: 0.5rem;
+        cursor: pointer;
+        border-bottom: 1px solid #f1f5f9;
+      }
+      .dropdown li:hover {
+        background: #f1f5f9;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Recent Searches (Last 5)</h1>
+    <form id="search-form" class="search-box">
+      <input type="text" id="search-input" placeholder="Search..." autocomplete="off" />
+      <button type="submit">Search</button>
+    </form>
+    <ul id="history-dropdown" class="dropdown"></ul>
+    <p id="search-result"></p>
+
+    <script type="module" src="searches.js"></script>
+  </body>
+</html>
